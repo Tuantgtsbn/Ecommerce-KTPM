@@ -1,0 +1,2 @@
+Trong item_service, hãy tạo cho tôi model Item gồm các thuộc tính: id_item, category. Service này chủ yếu dùng để lấy dữ liệu từ các service như book_service, clothes_service.
+Từ đó, hãy tạo API cho phép lấy chi tiết sản phẩm dựa vào id_item và category (service sẽ gọi api của book_service hoặc clothes_service)

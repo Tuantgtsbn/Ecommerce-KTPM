@@ -1,0 +1,6 @@
+Hãy triển khai các chức năng cho service payment_service. Các chức năng bao gồm:
+1. Tạo thanh toán cho đơn hàng, ví dụ với paypal
+2. Cập nhật trạng thái thanh toán
+
+Các model trong order gồm:
+1. payment: id, id_order, amount, methodPayment, statusPayment, created_at, updated_at

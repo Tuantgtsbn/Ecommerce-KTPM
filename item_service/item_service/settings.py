@@ -77,11 +77,16 @@ WSGI_APPLICATION = 'item_service.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'djongo',
+        'NAME': 'item_service_db',
+        'ENFORCE_SCHEMA': False,
+        'CLIENT': {
+            'host': 'mongodb://localhost:27017',
+        }
     }
 }
-BOOK_SERVICE_URL='http://localhost:8006/api/books/'
+# URLs của các service
+BOOK_SERVICE_URL = 'http://localhost:8006/api/books/'
 CLOTHES_SERVICE_URL = 'http://localhost:8007/api/clothes/'
 BOOK_SERVICE_UPDATE_RATING_URL = 'http://localhost:8006/api/books/{product_id}/rate/'
 CLOTHES_SERVICE_UPDATE_RATING_URL = 'http://localhost:8007/api/clothes/{product_id}/rate/'

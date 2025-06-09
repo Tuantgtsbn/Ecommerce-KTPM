@@ -1,0 +1,9 @@
+Hãy triển khai các chức năng cho service order_service. Các chức năng bao gồm:
+1. Tạo 1 đơn hàng mới cho khách hàng
+2. Lấy chi tiết 1 đơn hàng của 1 khách hàng
+3. Lấy danh sách các order của 1 khách hàng
+4. Cập nhật trạng thái đơn hàng
+
+Các model trong order gồm:
+1. Order: id, orderStatus, amount, address, id_customer, created_at, updated_at, methodPayment, statusPayment
+2. OrderItem: id, id_order, id_item, category, quantity, price
