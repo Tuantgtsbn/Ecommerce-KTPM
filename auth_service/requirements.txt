@@ -1,0 +1,5 @@
+django
+corsheaders
+djangorestframework
+djangorestframework-simplejwt
+
